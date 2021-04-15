@@ -1,4 +1,4 @@
-package com.sims.hustles.tmdb.data
+package com.sims.hustles.tmdb.data.models.tvshows
 
 data class TvShow(
     val first_air_date: String,

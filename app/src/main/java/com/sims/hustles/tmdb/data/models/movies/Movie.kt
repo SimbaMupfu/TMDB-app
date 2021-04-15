@@ -1,4 +1,4 @@
-package com.sims.hustles.tmdb.data
+package com.sims.hustles.tmdb.data.models.movies
 
 data class Movie(
     val id: Int,

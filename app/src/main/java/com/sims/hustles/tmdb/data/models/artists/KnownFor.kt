@@ -1,4 +1,4 @@
-package com.sims.hustles.tmdb.data
+package com.sims.hustles.tmdb.data.models.artists
 
 
 import com.google.gson.annotations.SerializedName
