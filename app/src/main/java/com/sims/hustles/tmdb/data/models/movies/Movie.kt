@@ -1,12 +1,20 @@
 package com.sims.hustles.tmdb.data.models.movies
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import com.google.gson.annotations.SerializedName
+
+@Entity(tableName = "popular_movies")
 data class Movie(
+    @PrimaryKey
+    @SerializedName("id")
     val id: Int,
-    val original_language: String,
-    val original_title: String,
+    @SerializedName("overview")
     val overview: String,
-    val popularity: Double,
-    val poster_path: String,
-    val release_date: String,
+    @SerializedName("poster_path")
+    val posterPath: String,
+    @SerializedName("release_date")
+    val releaseDate: String,
+    @SerializedName("title")
     val title: String
 )
