@@ -1,8 +1,8 @@
-package com.sims.hustles.tmdb.api
+package com.sims.hustles.tmdb.data.api
 
-import com.sims.hustles.tmdb.data.ArtistList
-import com.sims.hustles.tmdb.data.MovieList
-import com.sims.hustles.tmdb.data.TvShowList
+import com.sims.hustles.tmdb.data.models.artists.ArtistList
+import com.sims.hustles.tmdb.data.models.movies.MovieList
+import com.sims.hustles.tmdb.data.models.tvshows.TvShowList
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
