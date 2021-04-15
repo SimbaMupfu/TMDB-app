@@ -74,8 +74,9 @@ dependencies {
     kapt "com.google.dagger:dagger-compiler:$dagger_version"
 
     //retrofit
-    implementation "com.sqaureup.retrofi2:retrofit:$retrofit_version"
-    implementation "com.sqaureup.retrofi2:converter-gson:$retrofit_version"
+    implementation "com.sqaureup.retrofit2:retrofit:$retrofit_version"
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation "com.sqaureup.retrofit2:converter-gson:$retrofit_version"
     implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
 
     //glide
