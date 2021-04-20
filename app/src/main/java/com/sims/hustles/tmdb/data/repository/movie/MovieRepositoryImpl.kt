@@ -1,7 +1,7 @@
 package com.sims.hustles.tmdb.data.repository.movie
 
 import android.util.Log
-import com.sims.hustles.tmdb.data.domain.repository.MovieRepository
+import com.sims.hustles.tmdb.domain.repository.MovieRepository
 import com.sims.hustles.tmdb.data.models.movies.Movie
 import com.sims.hustles.tmdb.data.repository.movie.datasource.MovieCacheDataSource
 import com.sims.hustles.tmdb.data.repository.movie.datasource.MovieLocalDataSource

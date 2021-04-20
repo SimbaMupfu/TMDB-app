@@ -1,7 +1,7 @@
 package com.sims.hustles.tmdb.data.repository.tvshow
 
 import android.util.Log
-import com.sims.hustles.tmdb.data.domain.repository.TvShowRepository
+import com.sims.hustles.tmdb.domain.repository.TvShowRepository
 import com.sims.hustles.tmdb.data.models.tvshows.TvShow
 import com.sims.hustles.tmdb.data.repository.tvshow.datasource.TvShowCacheDataSource
 import com.sims.hustles.tmdb.data.repository.tvshow.datasource.TvShowLocalDataSource
