@@ -26,8 +26,12 @@
             android:value="true" />
 
         <activity
+            android:name=".presentation.artists.ArtistActivity"
+            android:label="@string/title_activity_artist"></activity>
+        <activity android:name=".presentation.tvshows.TvShowActivity" />
+        <activity
             android:name=".presentation.movie.MovieActivity"
-            android:label="@string/title_activity_movie"></activity>
+            android:label="@string/title_activity_movie" />
         <activity android:name=".presentation.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

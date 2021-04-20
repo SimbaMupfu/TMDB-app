@@ -1,15 +1,17 @@
 package com.sims.hustles.tmdb.presentation.movie
 
 import android.os.Bundle
-import android.support.wearable.activity.WearableActivity
+import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
+import com.sims.hustles.tmdb.R
+import com.sims.hustles.tmdb.databinding.ActivityMovieBinding
 
-class MovieActivity : WearableActivity() {
+class MovieActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMovieBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_movie)
-
-        // Enables Always-on
-        setAmbientEnabled()
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_movie)
     }
 }
