@@ -1,7 +1,7 @@
 package com.sims.hustles.tmdb.data.repository.artist
 
 import android.util.Log
-import com.sims.hustles.tmdb.data.domain.repository.ArtistRepository
+import com.sims.hustles.tmdb.domain.repository.ArtistRepository
 import com.sims.hustles.tmdb.data.models.artists.Artist
 import com.sims.hustles.tmdb.data.repository.artist.datasource.ArtistCacheDataSource
 import com.sims.hustles.tmdb.data.repository.artist.datasource.ArtistLocalDataSource

@@ -1,4 +1,4 @@
-package com.sims.hustles.tmdb.data.domain.repository
+package com.sims.hustles.tmdb.domain.repository
 
 import com.sims.hustles.tmdb.data.models.artists.Artist
 
