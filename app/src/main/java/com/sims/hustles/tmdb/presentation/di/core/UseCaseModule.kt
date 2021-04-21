@@ -1,4 +1,4 @@
-package com.sims.hustles.tmdb.presentation.di
+package com.sims.hustles.tmdb.presentation.di.core
 
 import com.sims.hustles.tmdb.domain.repository.ArtistRepository
 import com.sims.hustles.tmdb.domain.repository.MovieRepository

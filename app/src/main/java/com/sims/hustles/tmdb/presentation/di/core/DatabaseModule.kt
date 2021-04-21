@@ -1,4 +1,4 @@
-package com.sims.hustles.tmdb.presentation.di
+package com.sims.hustles.tmdb.presentation.di.core
 
 import android.content.Context
 import androidx.room.Room

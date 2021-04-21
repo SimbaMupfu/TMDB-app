@@ -1,4 +1,4 @@
-package com.sims.hustles.tmdb.presentation.di
+package com.sims.hustles.tmdb.presentation.di.core
 
 import com.sims.hustles.tmdb.data.api.TMDBService
 import com.sims.hustles.tmdb.data.repository.artist.datasource.ArtistRemoteDataSource
