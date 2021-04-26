@@ -15,8 +15,9 @@
 
         <activity
             android:name=".presentation.artists.ArtistActivity"
-            android:label="@string/title_activity_artist"></activity>
-        <activity android:name=".presentation.tvshows.TvShowActivity" />
+            android:label="@string/title_activity_artist"/>
+        <activity android:name=".presentation.tvshows.TvShowActivity"
+            android:label="@string/title_activity_tv_show"/>
         <activity
             android:name=".presentation.movie.MovieActivity"
             android:label="@string/title_activity_movie" />
