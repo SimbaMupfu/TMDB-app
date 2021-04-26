@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">TMDB</string>
-    <string name="title_activity_movie">MovieActivity</string>
+    <string name="title_activity_movie">Popular Movies</string>
     <!--
     This string is used for square devices and overridden by hello_world in
     values-round/strings.xml for round devices.
     -->
     <string name="hello_world">Hello Square World!</string>
-    <string name="title_activity_artist">ArtistActivity</string>
+    <string name="title_activity_artist">Popular Artists</string>
+    <string name="title_activity_tv_show">Popular Tv Shows</string>
 </resources>
