@@ -9,7 +9,7 @@ import com.sims.hustles.tmdb.R
 import com.sims.hustles.tmdb.data.models.artists.Artist
 import com.sims.hustles.tmdb.databinding.ListItemBinding
 
-class ArtistAdapter: RecyclerView.Adapter<ArtistViewHolder>() {
+class ArtistAdapter(): RecyclerView.Adapter<ArtistViewHolder>() {
 
     private val artistList = ArrayList<Artist>()
 
@@ -26,13 +26,18 @@ class ArtistAdapter: RecyclerView.Adapter<ArtistViewHolder>() {
     override fun getItemCount(): Int {
         return artistList.size
     }
+
+    fun setList(artists: List<Artist>){
+        artistList.clear()
+        artistList.addAll(artists)
+    }
 }
 
 class ArtistViewHolder(val binding: ListItemBinding) :
     RecyclerView.ViewHolder(binding.root) {
     fun bind(artist: Artist) {
         binding.titleTextView.text = artist.name
-        binding.descriptionTextView.text = artist.overview
+        binding.descriptionTextView.text = artist.popularity.toString()
         val posterURL = "https://image.tmdb.org/t/p/w500${artist.profilePath}"
         Glide.with(binding.imageView.context)
             .load(posterURL)

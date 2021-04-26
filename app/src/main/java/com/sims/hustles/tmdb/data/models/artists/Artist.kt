@@ -12,8 +12,8 @@ data class Artist(
     val id: Int,
     @SerializedName("name")
     val name: String,
-    @SerializedName("overview")
-    val overview: String,
+    @SerializedName("popularity")
+    val popularity: Double,
     @SerializedName("profile_path")
-    val profilePath: String
+    val profilePath: String?
 )
