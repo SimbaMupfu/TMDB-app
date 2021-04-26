@@ -2,6 +2,9 @@ package com.sims.hustles.tmdb.presentation.tvshows
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
@@ -54,6 +57,38 @@ class TvShowActivity : AppCompatActivity() {
             }else{
                 binding.tvShowProgressBar.visibility = View.GONE
                 Toast.makeText(applicationContext, "No data available", Toast.LENGTH_LONG).show()
+            }
+        })
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.update, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId){
+            R.id.action_update ->{
+                updateTvShows()
+                true
+            }
+            else ->{
+                onOptionsItemSelected(item)
+            }
+        }
+    }
+
+    private fun updateTvShows(){
+        binding.tvShowProgressBar.visibility = View.VISIBLE
+        val responseLiveData = tvShowViewModel.updateTvShows()
+        responseLiveData.observe(this, Observer {
+            if(it != null){
+                adapter.setList(it)
+                adapter.notifyDataSetChanged()
+                binding.tvShowProgressBar.visibility = View.GONE
+            }else{
+                binding.tvShowProgressBar.visibility = View.GONE
             }
         })
     }
