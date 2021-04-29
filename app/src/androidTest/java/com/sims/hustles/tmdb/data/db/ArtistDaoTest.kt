@@ -48,4 +48,17 @@ class ArtistDaoTest {
         val savedArtists = dao.getArtists()
         Truth.assertThat(savedArtists).isEqualTo(artists)
     }
+
+    @Test
+    fun deleteArtistsTest() = runBlocking {
+        val artists = listOf(Artist(1, "Sims", 99.0, "profilePath1"),
+            Artist(2, "Clever", 89.0, "profilePath2"),
+            Artist(3, "Ruziwa", 69.0, "profilePath3"))
+
+        dao.saveArtists(artists)
+        dao.deleteAllArtists()
+
+        val artistResult = dao.getArtists()
+        Truth.assertThat(artistResult).isEmpty()
+    }
 }
