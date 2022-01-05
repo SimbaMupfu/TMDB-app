@@ -33,7 +33,7 @@
                     android:layout_margin="10dp"
                     android:text="Title"
                     android:textColor="@android:color/background_light"
-                    android:textSize="30sp"
+                    android:textSize="24sp"
                     android:textStyle="bold"/>
 
                 <ImageView
@@ -50,8 +50,7 @@
                     android:layout_margin="10dp"
                     android:text="Description"
                     android:textColor="@android:color/background_light"
-                    android:textSize="24sp"
-                    android:textStyle="bold"/>
+                    android:textSize="18sp"/>
 
             </LinearLayout>
 
